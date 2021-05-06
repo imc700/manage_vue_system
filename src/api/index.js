@@ -24,6 +24,13 @@ export const logout = () => {
     });
 };
 
+export const findAllUser = () => {
+    return request({
+        url: '/ks-account/user/findAll',
+        method: 'get'
+    });
+};
+
 export const getuserjwt = () => {
     return request({
         url: '/ks-auth/auth/userjwt',

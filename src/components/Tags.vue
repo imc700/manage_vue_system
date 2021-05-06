@@ -31,6 +31,7 @@
 </template>
 
 <script>
+
 export default {
     computed: {
         tagsList() {
@@ -97,6 +98,7 @@ export default {
     },
     created() {
         this.setTags(this.$route);
+
         // 关闭当前页面的标签页
         // this.$store.commit("closeCurrentTag", {
         //     $router: this.$router,

@@ -38,10 +38,18 @@
 
 <script>
 import Schart from 'vue-schart';
+import {findAllUser} from "../api/index";
 export default {
     name: 'basecharts',
     components: {
         Schart
+    },
+    created(){
+        findAllUser().then((res) => {
+            if(res.success){
+                this.$message('退出成功');
+            }
+        })
     },
     data() {
         return {

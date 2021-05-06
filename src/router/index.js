@@ -88,8 +88,8 @@ const routes = [
                 path: "/upload",
                 name: "upload",
                 meta: {
-                    title: '上传插件',
-                    permission: true
+                    title: '上传插件'
+                    // permission: true
                 },
                 component: () => import (
                 /* webpackChunkName: "upload" */
